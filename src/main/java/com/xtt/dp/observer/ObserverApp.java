@@ -8,18 +8,18 @@ public class ObserverApp {
 
     public static void main(String[] args) {
 
-        Subject sub1 = new Subject();
-        sub1.addObserver(new ConcreteObserverA());
-        sub1.addObserver(new ConcreteObserverB());
+        Subject first = new Subject();
+        first.addObserver(new ConcreteObserverA());
+        first.addObserver(new ConcreteObserverB());
 
-        sub1.setChanged();
-        sub1.notifyObservers("第一目标对象通知观察者");
+        first.setChanged();
+        first.notifyObservers("第一目标对象通知观察者");
 
-        Subject sub2 = new Subject();
-        sub2.addObserver(new ConcreteObserverB());
+        Subject second = new Subject();
+        second.addObserver(new ConcreteObserverB());
 
-        sub2.setChanged();
-        sub2.notifyObservers("第二目标对象通知观察者");
+        second.setChanged();
+        second.notifyObservers("第二目标对象通知观察者");
 
     }
 }
