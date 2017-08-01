@@ -7,7 +7,7 @@ package com.xtt.dp.singleton;
 public class Singleton2 {
     private static Singleton2 instance = null;
 
-    {
+    static {
         instance = new Singleton2();
     }
 
@@ -19,7 +19,9 @@ public class Singleton2 {
     }
 
     /**
-     * 只是写法与 Singleton1 有点不同，都是在类初始化时创建对象的，它的优缺点和Singleton1一样，可以归为一种写法。
+     * 只是写法与 Singleton1 有点不同，都是在类初始化时创建对象的，
+     * 它的优缺点和Singleton1一样，可以归为一种写法。
+     *
      * 可用
      */
 

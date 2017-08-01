@@ -68,6 +68,4 @@ public class Subject {
     public synchronized int countObservers(){
         return obs.size();
     }
-
-
 }

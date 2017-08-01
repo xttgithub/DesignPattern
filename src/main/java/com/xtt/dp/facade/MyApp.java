@@ -7,13 +7,14 @@ package com.xtt.dp.facade;
 public class MyApp {
 
     public static void main(String[] args) {
-        ComputerFacade computerFacade = new ComputerFacade();
-        computerFacade.start();
 
-        /*ShapeFacade shapeFacade = new ShapeFacade();
+        ShapeFacade shapeFacade = new ShapeFacade();
         shapeFacade.drawRectangle();
         shapeFacade.drawSquar();
-        shapeFacade.drawCircle();*/
+        shapeFacade.drawCircle();
+
+        /*ComputerFacade computerFacade = new ComputerFacade();
+        computerFacade.start();*/
 
     }
 
